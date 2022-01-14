@@ -11,7 +11,11 @@ app.use(express.json())
 app.use(cors())
 
 
-const uri = "mongodb+srv://boltexUser:tuhin123456@cluster0.rh6zv.mongodb.net/device?retryWrites=true&w=majority";
+
+// const uri = "mongodb+srv://boltexUser:home123456@cluster0.rh6zv.mongodb.net/device?retryWrites=true&w=majority";
+
+const uri = `mongodb+srv://boltexUser:home123456@cluster0.rh6zv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+
 app.get('/', (req, res) => {
     res.send("Hello !! Welcome to Boltex Home.")
 })
